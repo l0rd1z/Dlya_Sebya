@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags HTML</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+    body {
+        background-color: #f0f0f0;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .logo {
+    max-width: 100px; /* Размер логотипа */
+    border-radius: 50%; /* Закругляет логотип до круга */
+    margin-right: 15px; /* Отступ справа от логотипа */
+    border: none;
+    box-shadow: none;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .scroll-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+    margin-left: auto; /* Добавьте это свойство */
+    line-height: 1;
+    border: none;
+    box-shadow: none;
+}
+
+    .scroll-link:hover {
+    background-color: #777; /* Изменяет фон при наведении */
+    }
+
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Центрирует элементы по вертикали */
+    justify-content: space-between; /* Раздвигает элементы по сторонам */
+    border: none;
+    box-shadow: none;
+    }
+
+    .header-title {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 1;
+    border: none;
+    box-shadow: none;
+}
+
+</style>
+</head>
+
+<body class="stackedit">
+    <header>
+        <img src="logo.jfif" alt="Логотип" class="logo">      
+        <h1 class="header-title">Основные теги HTML</h1>
+        <a href="#footer" class="scroll-link">Подвал</a>
+    </header>
+  <div class="stackedit__html"><h1 id="html-теги-и-их-объяснения">HTML Теги и Их Объяснения</h1>
+<h2 id="что-такое-label-в-html">1. Что такое <code>&lt;label&gt;</code> в HTML?</h2>
+<p>Тег <code>&lt;label&gt;</code> используется в HTML для связывания текстовой метки с элементом формы, таким как <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> или <code>&lt;select&gt;</code>. Это улучшает доступность вашей веб-страницы, особенно для пользователей, использующих скринридеры или другие вспомогательные технологии.</p>
+<p><strong>Как работает <code>&lt;label&gt;</code>:</strong></p>
+<ul>
+<li><strong>Атрибут <code>for</code>:</strong> Связывает метку с элементом формы через значение атрибута <code>id</code> этого элемента.</li>
+<li><strong>Преимущества:</strong>
+<ul>
+<li><strong>Улучшает доступность:</strong> Пользователи скринридеров могут понять, какое поле за что отвечает.</li>
+<li><strong>Увеличивает кликабельную область:</strong> При нажатии на текст метки фокус перемещается на связанное поле ввода.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>quantity<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Количество товара:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>quantity<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>quantity<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>В этом примере:</p>
+<ul>
+<li>Тег <code>&lt;label&gt;</code> содержит текст “Количество товара:” и связан с полем ввода <code>&lt;input&gt;</code> через атрибут <code>for="quantity"</code>, где <code>quantity</code> — это значение атрибута <code>id</code> элемента <code>&lt;input&gt;</code>.</li>
+<li>Когда пользователь кликает на текст “Количество товара:”, курсор автоматически перемещается в связанное поле ввода.</li>
+</ul>
+<hr>
+<h2 id="популярные-и-часто-используемые-теги-html-с-объяснениями">2. Популярные и часто используемые теги HTML с объяснениями:</h2>
+<p>Я подготовил список наиболее распространенных HTML-тегов с пояснениями их назначения и использования.</p>
+<hr>
+<h3 id="структурные-теги">Структурные теги:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;!DOCTYPE html&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Указывает тип документа и версию HTML. В HTML5 используется <code>&lt;!DOCTYPE html&gt;</code>.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;html&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Корневой элемент HTML-документа. Внутри него содержатся все остальные элементы.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ru<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Содержимое документа --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;head&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Содержит метаданные о документе: заголовок, подключения стилей и скриптов, мета-теги и т.д.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Заголовок страницы<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;body&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Содержит видимое содержимое веб-страницы: текст, изображения, ссылки и т.д.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Видимое содержимое --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-форматирования-текста">Теги форматирования текста:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Заголовки разного уровня, от самого большого <code>&lt;h1&gt;</code> до самого маленького <code>&lt;h6&gt;</code>.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Заголовок уровня 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Заголовок уровня 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;p&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Абзац текста.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Это пример абзаца текста.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;br&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Перенос строки.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html">Первая строка<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>Вторая строка
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;strong&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Выделяет текст жирным шрифтом, семантически обозначая важность.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html">Это <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>важный<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> текст.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;em&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Выделяет текст курсивом, семантически обозначая акцент.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html">Это <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>подчеркнутый<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span> текст.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;span&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Инлайн-контейнер для текстовых элементов или элементов без блочной структуры.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Красный текст<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;div&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Блочный контейнер для группировки других элементов.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Другие элементы --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-ссылок-и-изображений">Теги для ссылок и изображений:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;a&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Создает гиперссылку.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>href</code>: URL адрес ссылки.</li>
+<li><code>target</code>: Определяет, где открыть ссылку (<code>_blank</code> для нового окна).</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.example.com<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Посетите Example.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;img&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Вставляет изображение.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>src</code>: Путь к изображению.</li>
+<li><code>alt</code>: Альтернативный текст на случай, если изображение не загрузится.</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Описание изображения<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-списков">Теги для списков:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;ul&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Неупорядоченный (маркированный) список.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Элемент 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Элемент 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;ol&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Упорядоченный (нумерованный) список.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Первый шаг<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Второй шаг<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;li&gt;</code></strong></p>
+<ul>
+<li><strong>Описание:</strong> Элемент списка внутри <code>&lt;ul&gt;</code> или <code>&lt;ol&gt;</code>.</li>
+<li><strong>Пример:</strong> (см. выше)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-таблиц">Теги для таблиц:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;table&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Создает таблицу.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Содержимое таблицы --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;tr&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Строка таблицы.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Ячейки строки --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;td&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Ячейка таблицы.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Данные<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;th&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Заголовочная ячейка таблицы.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Заголовок<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-форм">Теги для форм:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;form&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Контейнер для элементов формы.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>action</code>: URL для отправки данных формы.</li>
+<li><code>method</code>: Метод отправки данных (<code>GET</code> или <code>POST</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/submit<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Элементы формы --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;input&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Поле ввода данных.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>type</code>: Тип ввода (<code>text</code>, <code>password</code>, <code>submit</code>, <code>checkbox</code>, и т.д.).</li>
+<li><code>name</code>: Имя поля для отправки на сервер.</li>
+<li><code>id</code>: Уникальный идентификатор.</li>
+<li><code>value</code>: Значение по умолчанию.</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;label&gt;</code></strong></p>
+<ul>
+<li><strong>Описание:</strong> Связывает текстовую метку с элементом формы.</li>
+<li><strong>Атрибуты:</strong>
+<ul>
+<li><code>for</code>: Значение <code>id</code> связанного элемента формы.</li>
+</ul>
+</li>
+<li><strong>Пример:</strong> (см. в начале ответа)</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;select&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Выпадающий список.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>country<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>country<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ru<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Россия<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>us<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>США<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;option&gt;</code></strong></p>
+<ul>
+<li><strong>Описание:</strong> Элемент внутри <code>&lt;select&gt;</code>, представляющий один вариант.</li>
+<li><strong>Пример:</strong> (см. выше)</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;textarea&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Многострочное поле ввода текста.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>5<span class="token punctuation">"</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>30<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;button&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Кнопка.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>type</code>: Тип кнопки (<code>button</code>, <code>submit</code>, <code>reset</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Отправить<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="медиа-теги">Медиа-теги:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;audio&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Встраивает аудио-контент.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">controls</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio.mp3<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio/mpeg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Ваш браузер не поддерживает аудио.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;video&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Встраивает видео-контент.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>320<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>240<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video.mp4<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Ваш браузер не поддерживает видео.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-работы-со-скриптами-и-стилями">Теги для работы со скриптами и стилями:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;script&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Встраивает или подключает JavaScript-код.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>src</code>: Путь к внешнему файлу скрипта.</li>
+<li><code>defer</code>: Откладывает выполнение скрипта до полной загрузки страницы.</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>script.js<span class="token punctuation">"</span></span> <span class="token attr-name">defer</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;style&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Встраивает CSS-стили в документ.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+    <span class="token selector">body </span><span class="token punctuation">{</span> <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0f0f0</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;link&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Подключает внешние ресурсы, такие как файлы стилей.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>rel</code>: Тип связанного ресурса (<code>stylesheet</code> для CSS).</li>
+<li><code>href</code>: Путь к ресурсу.</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>styles.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="метаданные-и-seo-теги">Метаданные и SEO-теги:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;meta&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Предоставляет метаданные о документе.</p>
+</li>
+<li>
+<p><strong>Атрибуты:</strong></p>
+<ul>
+<li><code>charset</code>: Кодировка документа (например, UTF-8).</li>
+<li><code>name</code>: Название метаданных (например, <code>description</code>, <code>keywords</code>).</li>
+<li><code>content</code>: Содержимое метаданных.</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Описание страницы<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;title&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Заголовок страницы, отображаемый в браузере и поисковых системах.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Заголовок страницы<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="другие-полезные-теги">Другие полезные теги:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;header&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Секция верхней части страницы или раздела, обычно содержит логотип, навигацию.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Логотип и меню --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;footer&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Секция нижней части страницы или раздела, обычно содержит контактную информацию, копирайты.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+    <span class="token entity" title="©">&amp;copy;</span> 2023 Моя компания
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;nav&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Контейнер для навигационных ссылок.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#home<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Главная<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#about<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>О нас<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;section&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Секция или раздел документа.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Заголовок раздела<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Содержимое раздела.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;article&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Независимый, самодостаточный контент, например, статья или запись в блоге.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Заголовок статьи<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Текст статьи.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;aside&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Содержит контент, связанный с основным, но не являющийся частью основного потока, например, боковая панель.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Дополнительная информация<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Боковая панель с информацией.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;main&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Основное содержимое документа.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Основной контент --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;figure&gt;</code> и <code>&lt;figcaption&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Используются для группировки медиа-контента с подписью.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Описание изображения<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span><span class="token punctuation">&gt;</span></span>Подпись к изображению<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="теги-для-разметки-текста">Теги для разметки текста:</h3>
+<ul>
+<li>
+<p><strong><code>&lt;blockquote&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Блочная цитата из другого источника.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+    "Это пример цитаты."
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;code&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Отображает текст в виде кода.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Используйте команду <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>npm install<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> для установки пакетов.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;pre&gt;</code></strong></p>
+<ul>
+<li>
+<p><strong>Описание:</strong> Сохраняет форматирование текста, включая пробелы и переносы строк.</p>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span>
+Линия 1
+    Отступ
+Линия 3
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="заключение">Заключение</h2>
+<p>Этот список охватывает наиболее часто используемые теги в HTML. Понимание каждого из них поможет вам создавать семантически правильные и структурированные веб-страницы.</p>
+<hr>
+</div>
+<footer id="footer">
+    <p>&copy; <a href="#" onclick="navigator.clipboard.writeText('by MEQURA')">by MEQURA</a></p>
+</footer>
+
+</body>
+
+</html>
